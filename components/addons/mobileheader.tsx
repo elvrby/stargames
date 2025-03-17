@@ -30,24 +30,6 @@ const MobileComponent: React.FC = () =>{
       }
     }, []);
 
-    // Scroll Effect
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
     return(
         <div className="w-full navbar h-14 flex items-center justify-center shadow-md z-50">
             {/* Mobile */}

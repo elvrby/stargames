@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import MobileComponent from './addons/mobileheader';
+import NewProductComponent from './addons/newproduct';
 
 const IndexComponent: React.FC = () =>{
     return(
@@ -53,12 +54,14 @@ const IndexComponent: React.FC = () =>{
               <Image className='w-full rounded-lg lg:rounded-2xl' src={"/IMG/NexGames-Banner.png"} alt='' width={2000} height={1000}></Image>
             </div>
 
+            {/* Top Game & Apps */}
             <div>
-              <h2 className='text-3xl font-bold'>Top Game & Apps</h2>
+              <h2 className='text-3xl font-bold'>Top Games & Apps</h2>
               <span className='text-sm'>Our Recommendations For You</span>
             </div>
 
             <div className='w-full block lg:flex mt-5 justify-between'>
+
               <div className='lg:w-2/8 h-80 bg-zinc-800 rounded-2xl m-2 mb-5 lg:mb-2 shadowH'>
                 {/* Border Image */}
                 <div className='w-full h-40 relative'>
@@ -151,6 +154,10 @@ const IndexComponent: React.FC = () =>{
                 
               </div>
 
+            </div>
+
+            <div>
+              <NewProductComponent></NewProductComponent>
             </div>
 
 

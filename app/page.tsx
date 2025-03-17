@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "@/components/header";
+import IndexComponent from "@/components";
 
 const Page: React.FC = () => {
   return(
     <main>
-      <Header></Header>
+      <IndexComponent></IndexComponent>
     </main>
   );
 }

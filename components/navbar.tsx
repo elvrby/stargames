@@ -1,6 +1,5 @@
 "use client";
-import React, { useEffect, useState } from 'react';
-import Cookies from 'js-cookie';
+import React, { useState } from 'react';
 import DisplayAddon from './addons/display';
 
 interface NavbarComponentProps {

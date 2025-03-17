@@ -49,6 +49,9 @@ const IndexComponent: React.FC = () =>{
         {/*       Main Konten        */}
         <div className='w-full lg:m-2 mt-4 bg-zinc-900 rounded-tl-2xl'>
           <div className='p-6'>
+            <div className='mb-5'>
+              <Image className='w-full rounded-lg lg:rounded-2xl' src={"/IMG/NexGames-Banner.png"} alt='' width={2000} height={1000}></Image>
+            </div>
 
             <div>
               <h2 className='text-3xl font-bold'>Top Game & Apps</h2>

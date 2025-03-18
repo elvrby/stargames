@@ -1,11 +1,13 @@
 "use client";
 
-import React from 'react';
+import Link from "next/link";
 import Image from 'next/image';
 import MobileComponent from './addons/mobileheader';
 import NewProductComponent from '@/app/newproduct';
+import TopProductComponent from "@/app/TopProduct";
 
 const IndexComponent: React.FC = () =>{
+
     return(
       <main className='block lg:flex'>
         {/* Desktop Header Navigasi */}
@@ -60,100 +62,8 @@ const IndexComponent: React.FC = () =>{
               <span className='text-sm'>Our Recommendations For You</span>
             </div>
 
-            <div className='w-full block lg:flex mt-5 justify-between'>
-
-              <div className='lg:w-2/8 h-80 bg-zinc-800 rounded-2xl m-2 mb-5 lg:mb-2 shadowH'>
-                {/* Border Image */}
-                <div className='w-full h-40 relative'>
-                  <Image className='rounded-t-2xl' src="/IMG/GTAV-1.jpg" alt="Gambar GTAV" fill style={{ objectFit: "cover", objectPosition: "center" }}/>
-                </div>
-                <div className='p-3'>
-                  <div className='w-full flex items-center justify-between'>
-                    <svg className='fill-zinc-500 w-6' height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xmlns="http://www.w3.org/2000/svg"><g><path d="M3.765,46.362l19.836,2.873V30.257H3.765V46.362z M3.765,27.546h19.836V8.566L3.765,11.439V27.546z M26.312,49.628   l26.616,3.855V30.257H26.312V49.628z M26.312,8.172v19.374h26.616V4.319L26.312,8.172z"/></g></svg>
-                    <span className='text-xs bg-red-800 pl-3 pr-3 rounded-lg'>Trends</span>
-                  </div>
-                  <div>
-                    <h2 className='font-bold text-xl'>Grand Theft Auto V</h2>
-                    <div className='w-full flex'>
-                    <span className="text-xs" style={{ wordSpacing: "0.5rem" }}>
-                      Action Story RPG
-                    </span>
-                    </div>
-                    
-                  </div>
-                </div>
-                
-              </div>
-
-              <div className='lg:w-2/8 h-80 bg-zinc-800 rounded-2xl m-2 mb-5 lg:mb-2 shadowH'>
-                {/* Border Image */}
-                <div className='w-full h-40 relative'>
-                  <Image className='rounded-t-2xl' src="/IMG/EldenRing-1.png" alt="Gambar GTAV" fill style={{ objectFit: "cover", objectPosition: "center" }}/>
-                </div>
-                <div className='p-3'>
-                  <div className='w-full flex items-center justify-between'>
-                    <svg className='fill-zinc-500 w-6' height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xmlns="http://www.w3.org/2000/svg"><g><path d="M3.765,46.362l19.836,2.873V30.257H3.765V46.362z M3.765,27.546h19.836V8.566L3.765,11.439V27.546z M26.312,49.628   l26.616,3.855V30.257H26.312V49.628z M26.312,8.172v19.374h26.616V4.319L26.312,8.172z"/></g></svg>
-                    <span className='text-xs bg-red-800 pl-3 pr-3 rounded-lg'>Trends</span>
-                  </div>
-                  <div>
-                    <h2 className='font-bold text-xl'>Elden Ring: NIGHTREIN</h2>
-                    <div className='w-full flex'>
-                    <span className="text-xs" style={{ wordSpacing: "0.5rem" }}>
-                      Action Exploration RPG
-                    </span>
-                    </div>
-                    
-                  </div>
-                </div>
-                
-              </div>
-
-              <div className='lg:w-2/8 h-80 bg-zinc-800 rounded-2xl m-2 mb-5 lg:mb-2 shadowH'>
-                {/* Border Image */}
-                <div className='w-full h-40 relative'>
-                  <Image className='rounded-t-2xl' src="/IMG/MSOffice-1.jpg" alt="Gambar GTAV" fill style={{ objectFit: "cover", objectPosition: "center" }}/>
-                </div>
-                <div className='p-3'>
-                  <div className='w-full flex items-center justify-between'>
-                    <svg className='fill-zinc-500 w-6' height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xmlns="http://www.w3.org/2000/svg"><g><path d="M3.765,46.362l19.836,2.873V30.257H3.765V46.362z M3.765,27.546h19.836V8.566L3.765,11.439V27.546z M26.312,49.628   l26.616,3.855V30.257H26.312V49.628z M26.312,8.172v19.374h26.616V4.319L26.312,8.172z"/></g></svg>
-                    <span className='text-xs bg-red-800 pl-3 pr-3 rounded-lg'>Trends</span>
-                  </div>
-                  <div>
-                    <h2 className='font-bold text-xl'>Microsoft Office</h2>
-                    <div className='w-full flex'>
-                    <span className="text-xs" style={{ wordSpacing: "0.5rem" }}>
-                      Applications
-                    </span>
-                    </div>
-                    
-                  </div>
-                </div>
-                
-              </div>
-
-              <div className='lg:w-2/8 h-80 bg-zinc-800 rounded-2xl m-2 mb-5 lg:mb-2 shadowH'>
-                {/* Border Image */}
-                <div className='w-full h-40 relative'>
-                  <Image className='rounded-t-2xl' src="/IMG/AdobeCC-1.jpg" alt="Gambar GTAV" fill style={{ objectFit: "cover", objectPosition: "center" }}/>
-                </div>
-                <div className='p-3'>
-                  <div className='w-full flex items-center justify-between'>
-                    <svg className='fill-zinc-500 w-6' height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xmlns="http://www.w3.org/2000/svg"><g><path d="M3.765,46.362l19.836,2.873V30.257H3.765V46.362z M3.765,27.546h19.836V8.566L3.765,11.439V27.546z M26.312,49.628   l26.616,3.855V30.257H26.312V49.628z M26.312,8.172v19.374h26.616V4.319L26.312,8.172z"/></g></svg>
-                    <span className='text-xs bg-red-800 pl-3 pr-3 rounded-lg'>Trends</span>
-                  </div>
-                  <div>
-                    <h2 className='font-bold text-xl'>Adobe Creative Clouds</h2>
-                    <div className='w-full flex'>
-                    <span className="text-xs" style={{ wordSpacing: "0.5rem" }}>
-                      Applications
-                    </span>
-                    </div>
-                    
-                  </div>
-                </div>
-                
-              </div>
-
+            <div>
+              <TopProductComponent></TopProductComponent>
             </div>
 
             <div>

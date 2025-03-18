@@ -23,18 +23,18 @@ const NewProductComponent: React.FC = () => {
       <div className="relative mt-4">
         <button
           onClick={() => setShowDropdown(!showDropdown)}
-          className="px-4 py-2 rounded bg-blue-500 text-white"
+          className="px-4 py-2 rounded bg-red-800 text-white"
         >
-          Kategori
+          Categories
         </button>
         {showDropdown && (
-          <div className="absolute mt-2 bg-white shadow rounded w-40 z-10">
+          <div className="absolute mt-2 bg-zinc-800 shadow rounded w-40 z-10">
             <button
               onClick={() => {
                 setSelectedCategory("all");
                 setShowDropdown(false);
               }}
-              className="block w-full text-left px-4 py-2 hover:bg-gray-100"
+              className="block w-full text-left px-4 py-2 hover:bg-zinc-700"
             >
               All
             </button>
@@ -43,7 +43,7 @@ const NewProductComponent: React.FC = () => {
                 setSelectedCategory("game");
                 setShowDropdown(false);
               }}
-              className="block w-full text-left px-4 py-2 hover:bg-gray-100"
+              className="block w-full text-left px-4 py-2 hover:bg-zinc-700"
             >
               Game
             </button>
@@ -52,7 +52,7 @@ const NewProductComponent: React.FC = () => {
                 setSelectedCategory("aplikasi");
                 setShowDropdown(false);
               }}
-              className="block w-full text-left px-4 py-2 hover:bg-gray-100"
+              className="block w-full text-left px-4 py-2 hover:bg-zinc-700"
             >
               Aplikasi
             </button>
@@ -76,7 +76,7 @@ const NewProductComponent: React.FC = () => {
               <div className="p-3">
                 <div className="flex items-center justify-between mt-2 mb-2">
                   <span className="text-xs bg-red-800 pl-3 pr-3 rounded-lg">
-                    Trends
+                    Latest
                   </span>
                 </div>
                 <h2 className="font-bold text-xl">{product.title}</h2>

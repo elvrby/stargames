@@ -8,7 +8,6 @@ interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
-
 export default async function ProductPage({ params }: PageProps) {
   // Unwrap params menggunakan await
   const { slug } = await params;
@@ -18,6 +17,12 @@ export default async function ProductPage({ params }: PageProps) {
   if (!product) {
     return <div className="text-center mt-10">Product not found</div>;
   }
+
+  // Filter downloadButtons yang memiliki link valid (tidak "none")
+  const validDownloadButtons =
+    product.downloadButtons?.filter(
+      (btn) => btn.link && btn.link.toLowerCase() !== "none"
+    ) || [];
 
   return (
     <div className="max-w-3xl mx-auto mt-10 p-4">
@@ -32,6 +37,22 @@ export default async function ProductPage({ params }: PageProps) {
         />
       </div>
       <p className="text-lg">{product.description}</p>
+
+      {/* Render tombol download hanya jika validDownloadButtons tidak kosong */}
+      {validDownloadButtons.length > 0 && (
+        <div className="mt-4 space-y-4">
+          {validDownloadButtons.map((btn, index) => (
+            <div key={index} className="flex items-center space-x-4">
+              <span className="text-lg font-medium">{btn.label}</span>
+              <a href={btn.link} target="_blank" rel="noopener noreferrer">
+                <button className="p-5 pb-1 pt-1 rounded-2xl bg-red-700 text-white">
+                  {btn.title}
+                </button>
+              </a>
+            </div>
+          ))}
+        </div>
+      )}
 
       {/* Menampilkan total views untuk halaman produk */}
       <PageViewCounter slug={product.slug} />

@@ -5,8 +5,9 @@ import CommentsSection from "@/components/CommentsSection";
 import PageViewCounter from "@/components/PageViewCounter";
 
 interface PageProps {
-  params: { slug: string } | Promise<{ slug: string }>;
+  params: Promise<{ slug: string }>;
 }
+
 
 export default async function ProductPage({ params }: PageProps) {
   // Unwrap params menggunakan await

@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import MobileComponent from './addons/mobileheader';
-import NewProductComponent from './addons/newproduct';
+import NewProductComponent from '@/app/newproduct';
 
 const IndexComponent: React.FC = () =>{
     return(

@@ -83,7 +83,7 @@ export const products: Product[] = [
     category: "game",
     title: "Elden Ring: NIGHTREIN",
     subtitle: "Action Exploration RPG",
-    image: "/IMG/EldenRing-1.png",
+    image: "/IMG/GAME/ELDENRING-NIGHTREIN/EldenRing-1.png",
     description:
       "Elden Ring: NIGHTREIN adalah game RPG aksi dengan dunia yang luas, penuh tantangan, dan eksplorasi yang menarik.",
     downloadButtons: [
@@ -109,7 +109,7 @@ export const products: Product[] = [
     category: "game",
     title: "Grand Theft Auto V Enhanced",
     subtitle: "Action Story RPG",
-    image: "/IMG/GTAV-1.jpg",
+    image: "/IMG/GAME/GTAV/GTAV-1.jpg",
     description:
       "Grand Theft Auto V adalah game aksi yang menawarkan dunia terbuka dengan cerita mendalam dan gameplay yang seru.",
     downloadButtons: [

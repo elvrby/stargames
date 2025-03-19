@@ -44,10 +44,7 @@ export const products: Product[] = [
       // Misalnya, Adobe tidak punya video, jadi bisa diisi "none" atau tidak disertakan
       video: "none",
       photos: [
-        "/IMG/AdobeCC-2.jpg",
-        "/IMG/AdobeCC-3.jpg",
-        "/IMG/AdobeCC-4.jpg",
-        "/IMG/AdobeCC-5.jpg",
+        "https://res.cloudinary.com/dlv5ytn1a/image/upload/v1742392482/Image/App/Adobe%20Cloud%20Creative/y47eoe1e96rvioijs1va.jpg",
       ],
     },
   },
@@ -70,10 +67,10 @@ export const products: Product[] = [
     media: {
       video: "none",
       photos: [
-        "/IMG/MSOffice-2.jpg",
-        "/IMG/MSOffice-3.jpg",
-        "/IMG/MSOffice-4.jpg",
-        "/IMG/MSOffice-5.jpg",
+        "https://res.cloudinary.com/dlv5ytn1a/image/upload/v1742392480/Image/App/MSOffice/mo5oxei5tqff93by4iiv.jpg",
+        "https://res.cloudinary.com/dlv5ytn1a/image/upload/v1742393342/Image/App/MSOffice/jldac1br6bfnr7cw1rza.png",
+        "https://res.cloudinary.com/dlv5ytn1a/image/upload/v1742393343/Image/App/MSOffice/wpxtatirltr5eucobo8q.jpg",
+        "https://res.cloudinary.com/dlv5ytn1a/image/upload/v1742393444/Image/App/MSOffice/htyn3b60xalp3trbg3x7.jpg",
       ],
     },
   },

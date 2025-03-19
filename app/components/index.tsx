@@ -30,11 +30,11 @@ const IndexComponent: React.FC = () =>{
 
               <div className='mt-2 p-0 text-white'>
                 <div>
-                  <ul className='w-full p-2 boxH'><li className='w-full flex items-center'><Image className='rounded-sm' src={"/IMG/GTAV.png"} alt="" width={40} height={40}></Image>
+                  <ul className='w-full p-2 boxH'><li className='w-full flex items-center'><Image className='rounded-sm' src={"https://res.cloudinary.com/dlv5ytn1a/image/upload/v1742383622/Image/Game/GTA5/hihszbxmnjxyt5wgcjax.jpg"} alt="" width={40} height={40}></Image>
                   <a className='ml-4 text-lg block w-full' href="">Games <span className='text-sm block text-zinc-500 font-semibold'>Top Games</span></a></li></ul>
                 </div>
                 <div>
-                  <ul className='w-full p-2 boxH'><li className='w-full flex items-center'><Image className='rounded-sm' src={"/IMG/MSOffice.png"} alt="" width={40} height={40}></Image>
+                  <ul className='w-full p-2 boxH'><li className='w-full flex items-center'><Image className='rounded-sm' src={"https://res.cloudinary.com/dlv5ytn1a/image/upload/v1742394512/Image/App/MSOffice/c1bza8jax6mzshtcsspu.png"} alt="" width={40} height={40}></Image>
                   <a className='ml-4 text-lg block w-full' href="">Applications <span className='text-sm block text-zinc-500 font-semibold'>Top Apps For Your Work</span></a></li></ul>
                 </div>
               </div>

@@ -1,7 +1,7 @@
 // app/components/CommentsSection.tsx
 "use client";
 import React, { useState, useEffect } from "react";
-import { db } from "../src/lib/firebaseConfig";
+import { db } from "../../src/lib/firebaseConfig";
 import {
   collection,
   addDoc,

@@ -1,8 +1,8 @@
 // app/product/[slug]/page.tsx
 import Image from "next/image";
 import { products, Product } from "../../data/products";
-import CommentsSection from "@/components/CommentsSection";
-import PageViewCounter from "@/components/PageViewCounter";
+import CommentsSection from "@/app/components/CommentsSection";
+import PageViewCounter from "@/app/components/PageViewCounter";
 
 interface PageProps {
   params: Promise<{ slug: string }>;

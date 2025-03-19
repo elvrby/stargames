@@ -63,7 +63,7 @@ const NewProductComponent: React.FC = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-5">
         {filteredProducts.map((product: Product) => (
           <Link key={product.id} href={`/product/${product.slug}`}>
-            <div className="bg-zinc-800 rounded-2xl shadowH cursor-pointer">
+            <div className="bg-zinc-800 rounded-2xl shadowH cursor-pointer lg:h-80">
               <div className="relative h-40 w-full">
                 <Image
                   className="rounded-t-2xl"

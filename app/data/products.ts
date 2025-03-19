@@ -1,7 +1,14 @@
+// app/data/products.ts
+
 export interface DownloadButton {
   label: string;
   title: string;
   link: string;
+}
+
+export interface Media {
+  video?: string;       // URL video (misalnya: mp4) atau "none"
+  photos?: string[];    // Array URL foto atau "none"
 }
 
 export interface Product {
@@ -13,10 +20,10 @@ export interface Product {
   image: string;
   description: string;
   downloadButtons?: DownloadButton[];
+  media?: Media;
 }
 
 export const products: Product[] = [
-  
   {
     id: 4,
     slug: "adobe-creative-clouds",
@@ -33,6 +40,16 @@ export const products: Product[] = [
         link: "https://res.cloudinary.com/dlv5ytn1a/raw/upload/fl_attachment/ojazcofkacibd4gskm1v.torrent",
       },
     ],
+    media: {
+      // Misalnya, Adobe tidak punya video, jadi bisa diisi "none" atau tidak disertakan
+      video: "none",
+      photos: [
+        "/IMG/AdobeCC-2.jpg",
+        "/IMG/AdobeCC-3.jpg",
+        "/IMG/AdobeCC-4.jpg",
+        "/IMG/AdobeCC-5.jpg",
+      ],
+    },
   },
   {
     id: 3,
@@ -50,6 +67,15 @@ export const products: Product[] = [
         link: "https://ranoz.gg/file/yxzBQqbq",
       },
     ],
+    media: {
+      video: "none",
+      photos: [
+        "/IMG/MSOffice-2.jpg",
+        "/IMG/MSOffice-3.jpg",
+        "/IMG/MSOffice-4.jpg",
+        "/IMG/MSOffice-5.jpg",
+      ],
+    },
   },
   {
     id: 2,
@@ -67,27 +93,45 @@ export const products: Product[] = [
         link: "https://download-link.com/elden-ring",
       },
     ],
+    media: {
+      video: "https://example.com/videos/eldenring.mp4", // URL video
+      photos: [
+        "/IMG/EldenRing-1.png",
+        "/IMG/EldenRing-3.png",
+        "/IMG/EldenRing-4.png",
+        "/IMG/EldenRing-5.png",
+      ],
+    },
   },
   {
     id: 1,
     slug: "grand-theft-auto-v",
     category: "game",
-    title: "Grand Theft Auto V",
+    title: "Grand Theft Auto V Enhanced",
     subtitle: "Action Story RPG",
     image: "/IMG/GTAV-1.jpg",
     description:
       "Grand Theft Auto V adalah game aksi yang menawarkan dunia terbuka dengan cerita mendalam dan gameplay yang seru.",
     downloadButtons: [
       {
-        label: "Ranor.gg",
+        label: "Datanodes",
         title: "Download",
-        link: "https://download-link.com/gta-v-ranor",
+        link: "https://datanodes.to/cc7dakefxy6u/Grand-Theft-Auto-V-Enhanced.rar",
       },
       {
-        label: "Mediafire",
+        label: "1Fichier",
         title: "Download",
-        link: "https://download-link.com/gta-v-mediafire",
+        link: "https://1fichier.com/?jw9ke74i34b1c1r20yjv",
       },
     ],
+    media: {
+      video: "https://www.youtube.com/watch?v=QkkoHAzjnUs",
+      photos: [
+        "https://res.cloudinary.com/dlv5ytn1a/image/upload/v1742383891/Image/Game/GTA5/gqacyamkiz05wkosbaqk.png",
+        "https://res.cloudinary.com/dlv5ytn1a/image/upload/v1742383886/Image/Game/GTA5/qws7gqriqhrce7x7wiwq.png",
+        "https://res.cloudinary.com/dlv5ytn1a/image/upload/v1742383885/Image/Game/GTA5/lhjc5ibo3px2vislq5ki.png",
+        "https://res.cloudinary.com/dlv5ytn1a/image/upload/v1742383890/Image/Game/GTA5/n3xoreivixukun5exrdk.png",
+      ],
+    },
   },
 ];

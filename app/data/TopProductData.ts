@@ -16,7 +16,7 @@ export interface Product {
       category: "game",
       title: "Grand Theft Auto V",
       subtitle: "Action Story RPG",
-      image: "/IMG/GAME/GTAV/GTAV-1.jpg",
+      image: "https://res.cloudinary.com/dlv5ytn1a/image/upload/v1742383622/Image/Game/GTA5/hihszbxmnjxyt5wgcjax.jpg",
       description:
         "Grand Theft Auto V adalah game aksi yang menawarkan dunia terbuka dengan cerita mendalam dan gameplay yang seru.",
     },
@@ -26,7 +26,7 @@ export interface Product {
       category: "game",
       title: "Elden Ring: NIGHTREIN",
       subtitle: "Action Exploration RPG",
-      image: "/IMG/GAME/ELDENRING-NIGHTREIN/EldenRing-1.png",
+      image: "https://res.cloudinary.com/dlv5ytn1a/image/upload/v1742391214/Image/Game/ELDENRING:NIGHTREIN/y4wirmzdlfqag2f6eopl.png",
       description:
         "Elden Ring: NIGHTREIN adalah game RPG aksi dengan dunia yang luas, penuh tantangan, dan eksplorasi yang menarik.",
     },
@@ -36,7 +36,7 @@ export interface Product {
       category: "aplikasi",
       title: "Microsoft Office",
       subtitle: "Applications",
-      image: "/IMG/MSOffice-1.jpg",
+      image: "https://res.cloudinary.com/dlv5ytn1a/image/upload/v1742392480/Image/App/MSOffice/mo5oxei5tqff93by4iiv.jpg",
       description:
         "Microsoft Office adalah paket aplikasi produktivitas yang meliputi Word, Excel, PowerPoint, dan lain-lain untuk kebutuhan bisnis dan pendidikan.",
     },
@@ -46,7 +46,7 @@ export interface Product {
       category: "aplikasi",
       title: "Adobe Creative Clouds",
       subtitle: "Applications",
-      image: "/IMG/AdobeCC-1.jpg",
+      image: "https://res.cloudinary.com/dlv5ytn1a/image/upload/v1742392482/Image/App/Adobe%20Cloud%20Creative/y47eoe1e96rvioijs1va.jpg",
       description:
         "Adobe Creative Clouds menyediakan berbagai aplikasi kreatif untuk desain grafis, video editing, dan pembuatan konten digital.",
     },

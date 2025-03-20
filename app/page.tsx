@@ -7,7 +7,10 @@ export const metadata: Metadata = {
     default: "Nexgames",
     template: "% - Nexgames"
   },
-  description: "Nexgame adalah platform untuk mendownload game dan software gratis",
+  description: "Nexgames adalah platform untuk mendownload game dan software gratis untuk membantu pekerjaanmu dan hiburanmu dengan game game terbaru yang selalu update",
+  twitter:{
+    card: "summary_large_image"
+  },
   icons: {
     icon: "/favicon.ico"
   }

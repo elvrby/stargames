@@ -1,5 +1,14 @@
+import type { Metadata } from "next";
 import React from "react";
 import IndexComponent from "./components";
+
+export const metadata: Metadata = {
+  title:{
+    default: "Nexgames",
+    template: "% - Nexgames"
+  },
+  description: "Nexgame adalah platform untuk mendownload game dan software gratis",
+};
 
 const Page: React.FC = () => {
   return(

@@ -20,6 +20,10 @@ export const metadata: Metadata = {
 const Page: React.FC = () => {
   return(
     <main>
+      <meta property="og:image" content="<generated>" />
+      <meta property="og:image:type" content="<generated>" />
+      <meta property="og:image:width" content="<generated>" />
+      <meta property="og:image:height" content="<generated>" />
       <IndexComponent></IndexComponent>
     </main>
   );
